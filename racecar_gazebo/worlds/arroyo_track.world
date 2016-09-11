@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+<world name="arroyo_track">
+
+  <scene>
+    <ambient>0.5 0.5 0.5 1.0</ambient>
+    <shadows>0</shadows>
+  </scene>
+
+  <include>
+    <uri>model://sun</uri>
+  </include>
+
+  <include>
+    <uri>model://ground_plane</uri>
+  </include>
+
+  <include>
+    <uri>model://racecar_description/models/arroyo_track</uri>
+    <pose>0 0 0 0 0 0</pose>
+    <name>arroyo_track</name>
+  </include>
+
+</world>
+</sdf>
