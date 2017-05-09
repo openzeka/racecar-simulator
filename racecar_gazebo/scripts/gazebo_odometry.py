@@ -17,7 +17,7 @@ import tf2_ros
 
 class OdometryNode:
     # Set publishers
-    pub_odom = rospy.Publisher('/vesc/odom', Odometry, queue_size=1)
+    pub_odom = rospy.Publisher('/odom', Odometry, queue_size=1)
 
     def __init__(self):
         # init internals
@@ -53,7 +53,7 @@ class OdometryNode:
         cmd = Odometry()
         cmd.header.stamp = self.last_recieved_stamp
         cmd.header.frame_id = 'map'
-        cmd.child_frame_id = 'odom'
+        cmd.child_frame_id = 'base_link'
         cmd.pose.pose = self.last_received_pose
         cmd.twist.twist = self.last_received_twist
         self.pub_odom.publish(cmd)
