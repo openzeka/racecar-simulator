@@ -25,4 +25,7 @@
     <arg name="config_file" value="$(find racecar)/config/$(arg racecar_version)/mux.yaml" />
   </include>
 
+  <!-- controllers -->
+  <include file="$(find racecar_controllers)/launch/controllers.launch" />
+
 </launch>

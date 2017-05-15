@@ -18,9 +18,7 @@
   </node>
 
   <!-- servo node -->
-  <node pkg="racecar_control" type="servo_commands.py" name="servo_commands" output="screen">
-    <remap from="/racecar/ackermann_cmd_mux/output" to="/ackermann_cmd_mux/output"/>
-  </node>
+  <node pkg="racecar_control" type="servo_commands.py" name="servo_commands" output="screen" />
 
   <!-- Allow for Gazebo to broadcast odom -->
   <node pkg="racecar_gazebo" name="gazebo_odometry_node" type="gazebo_odometry.py"/>
