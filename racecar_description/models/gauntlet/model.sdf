@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="gauntlet">
+    <link name="link">
+      <pose>-0.5 -7.25 0 0 -0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://racecar_description/meshes/gauntlet.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://racecar_description/meshes/gauntlet.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>
