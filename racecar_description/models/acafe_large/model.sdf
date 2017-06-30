@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="acafe_large">
+    <link name="link">
+      <pose>4.5 0.75 0 0 -0 3.14159</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://racecar_description/meshes/acafe_large.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://racecar_description/meshes/acafe_large.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>
