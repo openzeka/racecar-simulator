@@ -25,7 +25,9 @@
     <arg name="config_file" value="$(find racecar)/config/$(arg racecar_version)/mux.yaml" />
   </include>
 
-  <!-- controllers -->
-  <include file="$(find racecar_controllers)/launch/controllers.launch" />
+  <!-- safety controllers -->
+  <node pkg="racecar_safety_controller" type="safety_controller_node.py" name="safety_controller">
+    <remap from="ackermann_cmd_input" to="ackermann_cmd_mux/output" />
+  </node>
 
 </launch>
