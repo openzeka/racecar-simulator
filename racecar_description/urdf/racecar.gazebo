@@ -56,7 +56,7 @@
   </plugin>
 </gazebo>
 
-  <!-- hokuyo -->
+  <!-- lidar -->
 <xacro:unless value="$(optenv DISABLE_GAZEBO_LASER false)">
   <gazebo reference="laser">
     <material>Gazebo/Grey</material>
@@ -67,10 +67,10 @@
       <ray>
         <scan>
           <horizontal>
-            <samples>1081</samples>
+            <samples>360</samples>
             <resolution>1</resolution>
-            <min_angle>-2.3561944902</min_angle>
-            <max_angle>2.3561944902</max_angle>
+            <min_angle>-3.1415926535</min_angle>
+            <max_angle>3.1415926535</max_angle>
           </horizontal>
         </scan>
         <range>
